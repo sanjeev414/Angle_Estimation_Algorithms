@@ -1,4 +1,4 @@
-%% Simulation of 2-Dimensional Array for Estimation of Angle of Arrival Using Root-MUSIC Algorithm
+%% Simulation of 2-Dimensional Array for Estimation of Angle of Arrival Using MUSIC Algorithm
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
