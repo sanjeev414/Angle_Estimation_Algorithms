@@ -1,4 +1,4 @@
-%% Simulation of 1-Dimensional Array for Estimation of Angle of Arrival Using MUSIC Algorithm
+%% Simulation of 1-Dimensional Array for Estimation of Angle of Arrival Using MUSIC Algorithm for Coherent Sources
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -54,6 +54,10 @@ noise = sqrt(noisePower) * noise;
 % Received Signal Generation
 R = steeringVector*signals+ noise;
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Applying Spatial Smoothening for the Received Signal Matrix
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 R_signal = zeros(q,q);
 
 for i=0:numElements-q
@@ -68,7 +72,6 @@ end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Computation of Angle of Arrival using MUSIC Algorithm
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %% Eigen Value Decomposition
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
