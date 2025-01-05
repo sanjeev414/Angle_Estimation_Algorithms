@@ -1,3 +1,24 @@
+%%
+ % Copyright (c) 2025, Sanjeeva Reddy S
+ % All rights reserved.
+ 
+ %This source code is licensed under the MIT license found in the
+ % LICENSE file in the root directory of this source tree.
+ 
+ % Unauthorized copying of this file, via any medium, is strictly prohibited
+ % unless explicit permission is granted by the copyright owner.
+ 
+ % Description:
+ % This file contains utility functions for processing sparse arrays.
+ 
+ % Author: Sanjeeva Reddy S
+ % EMail: sanjeevareddy.s414@gmail.com
+ % Created on: January 5, 2025
+
+
+
+
+
 %% Simulation of 1-Dimensional Array for Estimation of Angle of Arrival Using ROOT - MUSIC Algorithm for Coherent Sources
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
