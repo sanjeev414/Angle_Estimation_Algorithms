@@ -24,14 +24,6 @@ SNR = 20;                                  % Signal to Noise Ratio (dB)
 q = numElements-numSignals;
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Create ULA array
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-array = phased.ULA('NumElements', numElements, 'ElementSpacing', elementSpacing * wavelength);  % Defining the Object function for the array
-figure(1);viewArray(array); % Visualize the array on the plane
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Create the steering vectors and Singal matrices
@@ -64,6 +56,10 @@ noise = sqrt(noise_variance/2) * (randn(numElements, numSnapshots) + 1i * randn(
 
 R = SteeringVector*signals+ noise;
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Applying Spatial Smoothening to Received Signal Matrix
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 R_signal = zeros(q,q);
 
 for i=0:numElements-q
@@ -76,6 +72,8 @@ end
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% ROOT MUSIC Algorithm 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Eigen Value Decomposition 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
