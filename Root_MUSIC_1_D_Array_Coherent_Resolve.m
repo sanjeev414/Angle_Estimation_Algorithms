@@ -1,4 +1,4 @@
-%% Simulation of 1-Dimensional Array for Estimation of Angle of Arrival Using ROOT - MUSIC Algorithm
+%% Simulation of 1-Dimensional Array for Estimation of Angle of Arrival Using ROOT - MUSIC Algorithm for Coherent Sources
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
